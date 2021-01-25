@@ -1,0 +1,73 @@
+
+
+/* 流动宽度 */
+@mixin setFluidWidth($min: auto, $max: auto) {
+  min-width: $min;
+  max-width: $max;
+  @if $max != auto {
+    margin: 0 auto;
+  }
+}
+
+/* 滚动条设置 */
+@mixin setScroll($diration: "auto") {
+  @if $diration == "y" {
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+  @else if $diration == "x" {
+    overflow-y: hidden;
+    overflow-x: auto;
+  }
+  @else {
+    overflow: auto;
+  }
+  @extend %scrollStyle;
+}
+
+
+/* 单行文本隐藏 */
+@mixin setEllipsis($width : auto) {
+  max-width: $width;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  word-wrap: normal;
+}
+
+/* 多行文本隐藏 */
+@mixin setLnEllipsis($line) {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: $line;
+}
+
+/* flex布局设置*/
+@mixin setFlex($diration: row, $justify: space-around, $align: center) {
+  display: flex;
+  flex-direction: $diration;
+  justify-content: $justify;
+  align-items: $align;
+}
+
+/* 设置过渡效果 */
+@mixin setTransition ($type: 'fade', $duration: .5s, $param: 0) {
+  &-enter-active,
+  &-leave-active {
+    transition: all $duration;
+  }
+  &-enter,
+  &-leave-to {
+    opacity: 0;
+  }
+  @if $type == 'fade' {
+    // 默认过渡
+  } @else if $type == 'fadeWithTransform' {
+    &-enter,
+    &-leave-to {
+      transform: $param !important;
+    }
+  }
+}

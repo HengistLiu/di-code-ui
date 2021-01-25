@@ -1,0 +1,106 @@
+
+// Brand Color
+$PRIMARY: #3bc688;
+$PRIMARY-LIGHT: #5acf9b;
+$PRIMARY-DARK: #31ac75;
+$PRIMARY-LUCENCY: rgba(52, 182, 123, .1);
+$PRIMARY-LUCENCY-DARK: rgba(52, 182, 123, .2);
+
+// Functional Color
+$SUCCESS: #3bc688;
+$SUCCESS-LIGHT: #5acf9b;
+$SUCCESS-DARK: #31ac75;
+$SUCCESS-LUCENCY: rgba(52, 182, 123, .1);
+$SUCCESS-LUCENCY-DARK: rgba(52, 182, 123, .2);
+
+$WARNING: #fd9233;
+$WARNING-LIGHT: #fda351;
+$WARNING-DARK: #fd800f;
+$WARNING-LUCENCY: rgba(253, 134, 26, .1);
+$WARNING-LUCENCY-DARK: rgba(253, 134, 26, .2);
+
+$DANGER: #f25555;
+$DANGER-LIGHT: #f47575;
+$DANGER-DARK: #ef2e2e;
+$DANGER-LUCENCY: rgba(240, 57, 57, .1);
+$DANGER-LUCENCY-DARK: rgba(240, 57, 57, .2);
+
+$BEHAVE: #6699ff;
+$BEHAVE-LIGHT: #84acff;
+$BEHAVE-DARK: #3979ff;
+$BEHAVE-LUCENCY: rgba(74, 133, 255, .1);
+$BEHAVE-LUCENCY-DARK: rgba(74, 133, 255, .2);
+
+$INFO: #838383;
+$INFO-LIGHT: #919191;
+$INFO-DARK: #6d6d6d;
+$INFO-LUCENCY: rgba(117, 117, 117, .1);
+$INFO-LUCENCY-DARK: rgba(117, 117, 117, .2);
+
+$BAN: #e8e9ea;
+$BAN-LIGHT: #f5f5f5;
+$BAN-DARK: #edeeef;
+$BAN-LUCENCY: rgba(237, 238, 239, .1);
+$BAN-LUCENCY-DARK: rgba(237, 238, 239, .2);
+
+// Font Color
+$TEXT-PRIMARY: #21272B;
+$TEXT-SECONDARY: #909399;
+$TEXT-PLACEHOLDER: #c0c4cc;
+$TEXT-REGULAR: #606164;
+
+$TEXT-WHITE: #ffffff;
+$TEXT-DARK: #333333;
+
+// Border Color
+$BORDER: #dcdfe6;
+$BORDER-LIGHT: #e9ebef;
+$BORDER-DARK: #ccd1db;
+
+// Background Color
+$BG: #eaeaea;
+
+$BG-WHITE: #ffffff;
+$BG-LIGHT: #f3f3f3;
+$BG-LIGHTER: #fbfbfb;
+
+$BG-BLACK: #000000;
+$BG-DARK: #505050;
+$BG-DARKER: #363636;
+
+$BG-SHADE: rgba(0, 0, 0, .1);
+$BG-SHADE-LIGHT: rgba(0, 0, 0, .05);
+$BG-SHADE-DARK: rgba(0, 0, 0, .3);
+$BG-SHADE-DARKER: rgba(0, 0, 0, .6);
+
+// Shadow Color
+$SHADOW: 0 0 4px 0 rgba(28,31,33,.06),
+         0 0 8px 0 rgba(28,31,33,.05),
+         0 0 16px 0 rgba(28,31,33,.04),
+         0 0 24px 0 rgba(28,31,33,.03),
+         0 0 32px 0 rgba(28,31,33,0.02);
+$SHADOW-LIGHT: 0 0 4px 0 rgba(28,31,33,.05),
+               0 0 8px 0 rgba(28,31,33,.04),
+               0 0 16px 0 rgba(28,31,33,.03),
+               0 0 24px 0 rgba(28,31,33,.02),
+               0 0 32px 0 rgba(28,31,33,0.01);
+$SHADOW-DARK: 0 0 4px 0 rgba(28,31,33,.1),
+              0 0 8px 0 rgba(28,31,33,.09),
+              0 0 16px 0 rgba(28,31,33,.08),
+              0 0 24px 0 rgba(28,31,33,.07),
+              0 0 32px 0 rgba(28,31,33,0.06);
+$SHADOW-DARKER: 0 0 4px 0 rgba(28,31,33,.3),
+                0 0 8px 0 rgba(28,31,33,.28),
+                0 0 16px 0 rgba(28,31,33,.26),
+                0 0 24px 0 rgba(28,31,33,.24),
+                0 0 32px 0 rgba(28,31,33,0.22);
+
+
+// Color list
+$types: success, behave, warning, danger, info;
+$colors: $SUCCESS, $BEHAVE, $WARNING, $DANGER, $INFO;
+$lightColors: $SUCCESS-LIGHT, $BEHAVE-LIGHT, $WARNING-LIGHT, $DANGER-LIGHT, $INFO-LIGHT;
+$darkColors: $SUCCESS-DARK, $BEHAVE-DARK, $WARNING-DARK, $DANGER-DARK, $INFO-DARK;
+$lucencyColors: $SUCCESS-LUCENCY, $BEHAVE-LUCENCY, $WARNING-LUCENCY, $DANGER-LUCENCY, $INFO-LUCENCY;
+$darkLucencyColors: $SUCCESS-LUCENCY-DARK, $BEHAVE-LUCENCY-DARK, $WARNING-LUCENCY-DARK, $DANGER-LUCENCY-DARK, $INFO-LUCENCY-DARK;
+

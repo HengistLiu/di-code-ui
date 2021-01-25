@@ -1,0 +1,41 @@
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* 共有样式-最新动态前缀 */
+.tips__newMessage--public {
+  position: relative;
+}
+.tips__newMessage--public::before {
+  content: "New";
+  position: absolute;
+  top: -4px;
+  left: -15px;
+  font-weight: 600;
+  font-size: 12px;
+  color: #FD9233;
+}
+
+/* 共有样式-圆边图标 */
+.icon--public--round {
+  width: 50px;
+  height: 50px;
+  position: relative;
+  display: inline-block;
+  border-radius: 50%;
+  text-align: center;
+  box-sizing: border-box;
+}
+.icon--public--round i {
+  font-size: 30px;
+  line-height: 48px;
+}
+
+/* 共用样式-文本超出省略号显示 */
+.text--overflow {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}

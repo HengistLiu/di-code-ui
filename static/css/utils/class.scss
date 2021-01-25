@@ -1,0 +1,93 @@
+
+/* 共有样式-组件背景框样式 */
+.component__background--public {
+  position: relative;
+  border: usnet;
+  border-radius: 8px;
+  box-shadow: $SHADOW-LIGHT;
+  background-color: $BG-WHITE;
+}
+
+/* 共有样式-内容背景框样式 */
+.content__background--public {
+  position: relative;
+  border: none;
+  border-radius: 8px;
+  box-shadow: none;
+  background-color: $BG-LIGHT;
+}
+
+/* 共有样式-卡片背景框样式 */
+.card__background--public {
+  position: relative;
+  border: 1px solid $BORDER;
+  border-radius: 8px;
+  box-shadow: $SHADOW-LIGHT;
+  background-color: $BG-WHITE;
+}
+
+/* 共有样式-滚动条样式 */
+/* 滚动条轨道 */
+.scrollStyle--public::-webkit-scrollbar-track {
+  background-color: #f9f9f9;
+  box-shadow: $SHADOW-LIGHT;
+}
+/* 定义滚动条高宽及背景 */
+.scrollStyle--public::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+  background-color: #7a7a7a;
+}
+/* 定义滚动条 */
+.scrollStyle--public::-webkit-scrollbar-thumb {
+  background-color: #8b8b8b;
+  border-radius: 3px;
+}
+
+/* 共用辅助样式-垂直居中辅助方块 */
+.vertical__block--public {
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+  user-select: none;
+  pointer-events: none;
+  cursor: default;
+}
+
+/* 未记录文字样式 */
+.none--public {
+  font-size: 10px;
+  color: $TEXT-PLACEHOLDER;
+}
+
+/* 折叠表格下的内容样式 */
+.otherInfo--public {
+  padding: 0 30px 0 60px;
+  h5 {
+    color: $PRIMARY-DARK;
+    font-size: 14px;
+    i {
+      font-weight: 300;
+      margin-right: 5px;
+    }
+  }
+  p {
+    line-height: 30px;
+    margin: 5px 0 !important;
+  }
+}
+
+/* 加载中的图标：旋转 */
+.loading__icon--public {
+  display: inline-block;
+  animation-name: loadingIcon;
+  animation-duration: 3s;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes loadingIcon {
+  0%{transform:rotate(0deg);}
+  100%{transform:rotate(-360deg);}
+}

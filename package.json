@@ -1,0 +1,42 @@
+{
+  "name": "di-code-ui",
+  "version": "0.7.7",
+  "versions": [
+    "0.7.7",
+    "0.7.2-beta"
+  ],
+  "author": "hengistliu <254679005@qq.com>",
+  "description": "The UI Library of Di code for Vue.js.",
+  "scripts": {
+    "start": "npm run serve ./test/main.js",
+    "serve": "vue-cli-service serve ./test/main.js",
+    "build": "vue-cli-service build --target lib --dest lib ./src/main.js",
+    "lint": "vue-cli-service lint",
+    "analyzer": "cross-env USR_ANALYZER=true npm run serve"
+  },
+  "main": "lib/di-code-ui.common.js",
+  "files": [
+    "lib",
+    "src",
+    "static"
+  ],
+  "dependencies": {
+    "core-js": "^3.4.3",
+    "vue": "^2.6.10"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "^4.1.0",
+    "@vue/cli-plugin-eslint": "^4.1.0",
+    "@vue/cli-service": "^4.1.0",
+    "@vue/eslint-config-standard": "^4.0.0",
+    "babel-eslint": "^10.0.3",
+    "cross-env": "^6.0.3",
+    "eslint": "^5.16.0",
+    "eslint-plugin-vue": "^5.0.0",
+    "node-sass": "^4.13.1",
+    "sass-loader": "^8.0.2",
+    "vue-template-compiler": "^2.6.10",
+    "webpack-bundle-analyzer": "^3.6.0",
+    "wget": "^0.0.1"
+  }
+}
